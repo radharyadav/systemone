@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>SystemOne</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+</head>
+
+
+<body>
+
+  <header class="w3-container w3-black header">
+    <span >ENDLESS</span>
+    
+  </header>
+
+  <div class="topcontainer" >
+
+    <div class="text-block" >
+      <h4>New Games & Acceessories</h4>
+      <h1>Monthaly Packages</h1>
+      <h1>Excitement delivered daily</h1>
+      <small>What's the best way to shop for the latest video games<br>and peripherals?How about never shopping at all?<br>You'll get new stuff on your door step - every month</small>
+      <p><button type="button"  class="w3-button w3-green w3-round-xxlarge" (click)="onGetStartedClick()" >GET STARTED</button></p>
+     
+    </div>
+  </div>
+  <section class="bottom">
+    <h5 >How it Works</h5>
+    <div class="container">
+
+      <div class="item1" *ngFor = "let response Of sorteddata;">
+        <h1>{{response.stepNumber}}</h1>
+        <div class="about-border"></div>
+        <h6>{{response.versionContent[0].title}}</h6>
+        <p>{{response.versionContent[0].body}}</p>
+        <!-- <div class="item1" *ngFor = "let response Of sorteddata;">
+          <h1>{{response.stepNumber}}</h1>
+          <div class="about-border"></div>
+          <div *ngFor = "let version Of response.versionContent;">
+          <h6>{{version.title}}</h6>
+          <p>{{version.body}}</p>
+        </div>
+        </div> -->
+      </div>
+    
+
+    </div>
+  </section>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+@font-face {
+    font-family: lato;
+    src: url('../assets/Lato/Lato-Light.ttf') format("opentype");
+  }
+  
+  @font-face {
+    font-family: lato-bold;
+    src: url('../assets/Lato/Lato-BoldItalic.ttf') format("opentype");
+  }
+  
+    body {
+      margin: 0px !important;
+      padding: 0px !important;
+    }
+  
+    .header{
+      height: 40px;background-color: black; display: flex;align-items: center;
+    }
+  
+    span{
+      margin-left: 7%;margin-top: 5px;color:#47e4c2;vertical-align: middle; font-family: lato-bold;
+    }
+  
+    .container {
+      display: grid !important;
+      grid-template-columns: auto auto auto auto;
+      margin-left: 10% !important;
+      margin-right: 10% !important;
+      position: relative;
+      grid-column-gap: 20px;
+      
+    }
+    body{
+      font-family: lato !important;
+    }
+  
+    .bottom {
+      text-align: center !important;
+    }
+    .text-block {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .about-border {
+      display: block;
+      width: 40px;
+      height: 3px;
+      background: #47e4c2;
+      margin: 20px auto;
+  }
+  
+  P{
+    font-size: 11px;
+  }
+  h6{
+    font-size: 13px;
+  }
+  h5{
+    text-align: center;
+  }
+  .w3-round-xxlarge {
+    background-color: #47e4c2 !important; 
+     
+  }
+  .w3-round-xxlarge:hover {
+      background-color: orange !important;
+     
+  }
+  .topcontainer{
+    background-image: url('../assets/bg.png');min-height: 95vh;background-size: cover;
+  }
